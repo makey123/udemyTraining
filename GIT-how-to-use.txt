@@ -1,0 +1,169 @@
+What does GIT do?
+
+Manage our project files and tracks changes, html, css, js etc
+
+History 		Git Keeps track of every change we make to our project.
+			Git can tell us on which day we changed files and added bits of code or removed.
+			You can revert changes
+
+Colaboration		Allows more than one person to work on the same file.
+			You can merge changes and be more productive.
+
+Feature Branches	Implementing multiple tasks and features
+			Create task branches (ie header-changes and footer-changes)
+			If one branch has been completed before the other you can merge the branch and push it live without having to wait for the other branch to be completed.
+
+#############################################
+
+Git in action - main terms
+
+Project = 		Repo. In Git a project (where you store all your working directory files) is called a repo.
+
+Working directory = 	The folder where your repository sits locally.
+
+Commit = 		Git doesn't save changes to its history unless you commit it, this is Gits way of saving.
+
+Staging = 		Before your allowed to commit you need to get the files ready, this is called staging. This allows control on what's commited, you may not want all your files to be commited, staging allows you to choose.
+
+#############################################
+
+How to use git
+
+1. create a working directory locally on your pc
+2. create content in your web editor and save to the working directory
+3. open command line
+3. run> git status (to see the files that have changed in the working directory)
+4. run> git add -A (to stage the files ready to the repository on your machine)
+5. run> git commit -m 'message' (to add the files to the repository with an explanation of the change)
+6. run> git push (to send the commited files to a repository server i.e github)
+7. run> git pull (to retreive and additional files and changes that are stored in the repo server and not locally)
+8. repeat steps 3 to 6 to send new changes back to the repo server
+
+####################
+
+Using the terminal
+
+Opening git and check what changes have been made to your local working directory, to do this run 
+
+git status
+# This will create a list of files that need to be staged (get ready for commit)
+
+git add -A
+# This will add all files to the staging environment (alternatively you can type the filename instead of -A for individual files).
+
+git commit -m 'Made the header orange and removed a line of text'
+# This commits anything in the staging environment and allows you to write a message to explain your changes.
+
+git checkout -- .
+# If you loose/remove the files from your local directory run git checkout -- . and the files you commited will be retreived.
+
+Git stores all history data in your local (working) directory in a hidden system folder, if your computer becomes damaged and you can't gain access to the folder you wont be able to run the git checkout -- . command. Therefore you should use a server to backup changes, or a 3rd party server for example gitHub
+
+################################
+
+Using github
+
+push
+# to take the repository on your hdd and send it to a repository server (github)
+
+pull 
+# to bring down any changes from the repository server to our local repository that are not in your local directory.
+
+
+########################################
+
+installing and setting up git on your pc
+
+https://git-scm.com/download/win
+
+
+
+open> git bash
+
+
+###########################################
+
+creating and using a new repo
+
+create a folder somewhere on your pc and call it, for example projects or sites
+
+run> git config --global user.name "Andy"
+# This will set the user name to above
+
+run> git config --global user.email "andymakeham@yahoo.com"
+# This will set the user email to above
+
+run> pwd
+# this will print the working directory
+
+run> cd
+# this will change directory. Then drag your folder into git bash to change the location
+
+run> pwd
+# run this again to verify 
+run> mkdir "hello-world"
+# this will create a folder in the projects directory call hello-world
+
+run> cd hello-world
+# this will change to the hello-world directory (alternatively drag and drop)
+
+run> git init
+# this will create a git repository to track changes
+
+run> touch "index.html"
+# this will create a html file as named above in the hello-world directory. open the file and make changes to the content.
+
+run> git status
+# this will show the file that can be staged, index.html (in red)
+
+run> git add index.html
+# this will add the file to the staging area
+
+run> git commit -m 'some message'
+# this will commit the file to the repository
+
+run> git checkout -- .
+# run this if you have lost any of the files locally and you need to get them from the repository
+
+
+########################################################
+
+using a repo that already exists, for example in git hub
+
+run> clone https://github.com/LearnWebCode/welcome-to-git.git
+# this will download to your working directory the folder (welcome-to-git) and its contents.
+
+########################################################
+
+configuring a github account
+
+1. Setup and account create a repository in github, give it a name
+2. download the folder by cloning and create a folder called remote> git clone https://github.com/makey123/andyTestgit remote -v
+2. cd to the files in your working directory you want to push to github
+3. run> git remote -v
+# this will display the server location where it believes you want to push to e,g
+origin https://github.com/makey123/andyTest.git (fetch)
+origin https://github.com/makey123/andyTest.git (push)
+# if not the correct path will be displayed in from the quicksetup in github e.g https://github.com/makey123/andytest.git 4. run> git remote set-url origin https://github.com/makey123/andytest.git
+# this will set the repository directory in git
+5. run> git push origin master
+# this will push files in th
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
