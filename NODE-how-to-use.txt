@@ -1,0 +1,31 @@
+##########################
+NODE.js and NPM
+
+Provides automation and organisation
+
+##########################
+NODE.js
+
+What is NODE.js?
+
+Provides server side javaScript functionality
+(create/delete files, talk to databases)
+
+Use Node as a developement tool to automate web development tasks
+
+Install node from https://nodejs.org/en/
+
+
+open cmd
+
+run> node -v
+# this will display the version number
+
+cd
+#change directory to the source file
+
+run> touch "test.js"
+or
+run> copy nul > test.js
+# this will create a test.js file in your directory
+
