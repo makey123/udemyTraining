@@ -144,10 +144,13 @@ configuring a github account
 # this will display the server location where it believes you want to push to e,g
 origin https://github.com/makey123/andyTest.git (fetch)
 origin https://github.com/makey123/andyTest.git (push)
-# if not the correct path will be displayed in from the quicksetup in github e.g https://github.com/makey123/andytest.git 4. run> git remote set-url origin https://github.com/makey123/andytest.git
+# if this is not the correct path go to githun where it will be displayed in from the quicksetup e.g https://github.com/makey123/andytest.git 4. 
+run> git remote set-url origin https://github.com/makey123/andytest.git
 # this will set the repository directory in git
+run> git remote -v
+# to check that the location is correct
 5. run> git push origin master
-# this will push files in th
+# this will push files to the master branch of your repository
 
 
 
