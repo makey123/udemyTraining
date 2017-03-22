@@ -1,8 +1,0 @@
-<span style="font-size:2.1em;font-weight:400;line-height: 1.3em;color: #fff;">Contact us</span> <br>
-<span style="font-size:2.8em;font-weight:600;line-height: 1.3em;color:#5FB4B9">0800 66 99 44</span><br>
-<span style="font-size:2.1em;font-weight:400;line-height: 1.3em;color:#fff;">(8-8 Mon to Fri, 9-5 Sat and Sun)</span><br><br>
-<span style="font-size:1.3em;font-weight:400;line-height: 1.3em;color: #fff;">Contact Boundless: <a href="mailto:info@boundless.co.uk">info@boundless.co.uk</a></span><br><br>
-
-<p>*Based on 2016 Bazaarvoice independent reviews where members have rated Boundless 3 stars or above.</p>
-
-<p>Boundless by CSMA is a trading name of Motoring & Leisure Services Limited, a subsidiary of the Civil Service Motoring Association Limited, registered office Britannia House, 21 Station Street, Brighton, BN1 4DE, registered in England no: 02813598. Motoring & Leisure Services Limited is authorised and regulated by the Financial. </p>
