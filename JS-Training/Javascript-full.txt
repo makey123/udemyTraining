@@ -1,0 +1,97 @@
+######
+##JS##
+######
+
+Javascript language basics
+
+brackets extension > autosavefiles on window blur
+
+# js is a lightweight, cross platform, object based language. Client side.
+# add interactivity and web apps
+
+HTML - content
+CSS3 - presentation
+JS - dynamic effects/programming
+
+######################
+Putting JS on the page
+######################
+
+linking to external JS files
+<script src="myfile.js"></script>
+
+adding js to the page
+<script>
+console.log("hello world!");
+</script>
+
+########################
+Variables and data types
+########################
+
+a variable is a container to store a value that can be used again and again in your code
+
+var name ='John'
+console.log(name);
+
+var lastName ="Smith";
+console.log(lastName);
+
+var age = 26;
+console.log(age);
+
+var fullAge = true;
+console.log(fullAge);
+
+### 5 data types
+
+Number = numbers, decimals and integers
+String = Sequence of text Characters
+Boolean = Logical data type that is either true or false
+Undefined = Data type variable that does not have a value yet
+Null = means 'non-existent'
+
+#################################
+Changing variables and data types
+#################################
+
+var name = 'John';
+var age = 26;
+
+console.log (name + age); // adds two variables together
+# John26
+
+// this is also and example of type coercion where JS converts a data type to another to display a result i.e number to a string
+
+console.log(age + age); // adds two numbers together
+# 52
+
+var job, isMarried;
+
+console.log(job);  // as this variable is not defined it will come up as undefined
+
+job = teacher;
+isMarried = true; // you can define the variables after setting them earlier in the document
+
+console.log(name + ' is ' + age + ' and a ' + 'teacher' + ' .Is he married? ' + isMarried + '.');  // this will display the variables and strings and define them as a string (type coercion) spaces are added between the variables by adding ' content ' and + symbols next to the variables
+
+You can change variables (variable mutation) after they've been defined by typing the variable name and adding a value. This can be displayed by running console.log
+
+age = 'thirty six';
+job = 'driver';
+
+console.log(name + ' is ' + age + ' and a ' + 'teacher' + ' .Is he married? ' + isMarried + '.');
+
+#########################################################
+Creating a message and printing the result to the console
+#########################################################
+
+var newMessage = prompt('what is your name?'); //store the prompt in a variable
+console.log(newMessage);
+
+##########################################
+creating a pop up box to display a message
+##########################################
+
+alert (name + ' is ' + age + ' and a ' + 'teacher' + ' .Is he married? ' + isMarried + '.'); // alert is used to replace console.log
+
