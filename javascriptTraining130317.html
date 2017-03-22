@@ -1,0 +1,319 @@
+<!doctype html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: arial;
+        }
+        
+        div {
+            display: inline-block;
+        }
+        
+        span {
+            display: block;
+            min-height: 50px;
+            overflow: hidden;
+        }
+        
+        h2 {
+            font-size: 1.2em;
+        }
+        
+        h3 {
+            display: inline-block;
+            background-color: yellow;
+            padding: 5px;
+            margin: 0;
+            font-size: 1.0em;
+        }
+        
+        p {
+            background-color: darkseagreen;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Statements</h2>
+    <span><h3>a = b * 2;</h3></span>
+    <span><h3>a</h3> and <h3>b</h3> are defined as variables</span>
+    <span><h3>2</h3> is a literal value, this means that it is not stored in a variable.</span>
+    <span><h3>=</h3> and <h3>*</h3> are operators, this means they perform actions.</span>
+    <span>Programs are built up as a collection of statements.</span>
+    <hr>
+
+    <h2>Expressions</h2>
+    <span><h3>a = b * 2;</h3></span>
+    <span>Statements are made up of expressions.</span>
+    <span><h3>2</h3> is a literal value expression.</span>
+    <span><h3>b</h3> is a variable expression, retreives it's current value.</span>
+    <span><h3>b * 2</h3> is an arithmetic expression.</span>
+    <span><h3>a = b * 2</h3> is an assignment expression. Assigning the arithmetic expression to the variable expression.</span>
+    <hr>
+
+    <p>a = 21;
+        <br> b = a * 2;
+        <br> console.log(b);
+        <br> 42</p>
+    <span>
+        <b>Understanding</b><br>
+        //The number 21 is assigned to variable a<br>
+    //Variable a is multipled by 2 and assigned to variable b<br>
+    //Variable b is logged in the console<br>
+    //The answer is 42</span>
+    <br>
+    <hr>
+    <h2>Displaying information</h2>
+    <span>Instead of using <h3>console.log();</h3>; you can use <h3>window.alert();</h3> to create a pop up window.<h3>document.write();</h3> to print to the browser and <h3>innerHTML</h3> to write to a specific element these are the methods of outputting data.</span>
+
+    <p>document.getElementById("some element").innerHTML = "new content";</p>
+    <span>//Make sure you surround the "new content" with the appropriate html tag, p, h1, h3 etc</span>
+
+    <hr>
+
+    <h2>Requesting information from the user</h2>
+    <span>To input data into the program you can create a prompt box using the <h3>prompt();</h3> function.</span>
+
+    <p>age = prompt ("Please tell me your age:");
+        <br>console.log(age);
+        <br>42</p>
+    <span>
+        <b>Understanding</b><br>
+        //Create a prompt box with the above question (string) and assign it to a variable called age<br>
+    //Type console.log(age); to display the pop up box<br>
+    //User then enters an amount in the pop up box the result will appear in the console</span>
+    <br>
+    <hr>
+    <h2>Operators</h2>
+    <span>Common operators <h3>+</h3> (addition), <h3>-</h3> (subtraction) <h3>*</h3> (multiplication) and <h3>/</h3> (division)</span>
+    <span><h3>++</h3> (increment), <h3>--</h3> (decrement) as in <h3>a++</h3> (similar to a = a +1)</span>
+    <span>Compound Assignment: <h3>+=, -=, *=</h3>, and <h3>/=</h3> are compound operators that combine a math operation with assignment, as in <h3>a += 2</h3> (same as a = a + 2).</span>
+    <span>Equality: <h3>==</h3> (loose-equals), <h3>===</h3> (strict-equals), <h3>!= (loose not-equals), <h3>!==</h3> (strict not-equals), as in <h3>a == b</h3>.</span>
+
+
+
+    <span>Comparison: <h3><</h3> (less than), <h3>></h3> (greater than), <h3><=</h3> (less than or loose-equals), <h3>>=</h3> (greater than or loose-equals), as in <h3>a <= b</h3>.</span>
+
+
+    <span>Logical: <h3>&&</h3> (and), <h3>||</h3> (or), as in <h3>a || b</h3> that selects either a or b.</span>
+    <hr>
+    <h2>Values and types</h2>
+    <span>When you need to do math, you want a <h3>number</h3>.</span>
+    <span>When you need to print a value on the screen, you need a <h3>string</h3> (one or more characters, words, sentences).</span>
+    <span>When you need to make a decision in your program, you need a <h3>boolean</h3> (true or false).</span>
+    <hr>
+    <h2>Changing between numbers and strings</h2>
+
+    <p>var a = "42";
+        <br>var b = Number(a);
+        <br> console.log(a);
+        <br> console.log(b); </p>
+    <span><b>Understanding</b><br>//The number 42 is assigned to variable a<br>
+    //Variable b converts variable a to a number<br>
+    //Variable a is logged in the console and displays it as "42", a string<br>
+    //Variable a is logged in the console and displays it as 42, a number
+        <hr>
+        <h2>Explicit and Implicit coercion</h2>
+        <span>
+            Using the <h3>Number(..)</h3> function is described as explicit coercion, converting a string to a number.</span>
+    <span>If you are trying to compare a string to a number and consider them to be loosely equal you could use implicit coercion </span>
+
+    <span>So if you use the <h3>==</h3> loose equals operator to make the comparison <h3>"99.99" == 99.99</h3>, JavaScript will convert the left-hand side <h3>"99.99"</h3> to its number equivalent <h3>99.99</h3>. The comparison then becomes <h3>99.99 == 99.99</h3>, which is of course true.</span>
+    <hr>
+    <h2>Comments</h2> // This is a single-line comment
+    <br>
+    <br> /* But this is a multiline comment. */
+        <hr>
+        <h2>Variables</h2>
+        <span>Allways assign var to preceed the first instance of a variable name</span>
+        <span>Note that amount holds a running value that changes over the course of the program, illustrating the primary purpose of variables: managing program state.</span>
+
+<span>In other words, state is tracking the changes to values as your program runs.</span>
+        <p>var amount = 99.99;
+        <br>amount = amount * 2;
+        <br> console.log( amount );
+        <br> amount = "£" + String( amount );
+        <br>console.log( amount );</p>
+        <span><b>Understanding</b><br>
+        //Store a number in a variable called amount
+        <br>//Change the status of amount by multiplying the amount by 2 and storing it back in the variable
+        <br>//Display the answer in the console
+        <br>//Coerce the value in the amount variable to a string and add a £ sign in front of it</span>
+        <hr>
+        <h2>A constant variable</h2>
+        <span>Constant variables are declared at the top of a program and are capitalised with underscores between multiple words. They are declared only once within a program, they should be preceeded by var or const in the latest version of JS ES6</span>
+                <p>var TAX_RATE = 0.08;
+        <br>var amount = 99.99;
+        <br>amount = amount * 2;
+        <br>amount = amount + (amount * TAX_RATE);
+        <br>console.log(amount);
+                    <br>console.log(amount.toFixed(2));</p>
+        <span><b>Understanding</b><br>
+        //Store a number in a constant variable called TAX_RATE;
+        <br>//Store a number in a variable called amount
+        <br>//Multiply the amount variable by 2 and store back in the amount variable
+        <br>//Multiply the amount variable by the TAX_RATE, add to the amount variable then store in the amount variable
+        <br>//print the amount variable to screen
+        <br>//print the amount variable to screen and change the decimal placing to 2</span>
+        <hr>
+        <h2>Blocks</h2>
+        <span>Blocks are used to store statements together. They are usually used for if statements. A block statement does not need to end in a semi-colon.</span>
+                <p>var amount = 99.99;
+        <br>if (amount > 10) {
+        <br>amount = amount * 2;
+        <br>console.log(amount);
+        <br>}</p>
+        <span><b>Understanding</b><br>
+        //Store a number in a variable called amount
+        <br>//create an if statement to display a result if the amount variable is greater than 10
+        <br>//multiply the amount variable * 2 and add to the amount variable;
+        <br>//print amount variable to console</span>
+        <hr>
+        <h2>Conditionals</h2>
+        <span>if and else. if this is true run this statement else do this. Conditionals are booleans.</span>
+        <p>var bank_balance = 302.13;
+        <br>var amount = 99.99
+     <br>if (amount < bank_balance) {
+        <br>console.log("I want to buy this phone!");
+        <br>}
+        <br><br>
+        else {
+        <br>console.log("No, thanks");    
+         <br>   }    
+        </p>
+        <span><b>Understanding</b><br>
+        //create a variable named bank_balance and store a figure
+        <br>//create a variable named amount and store a figure
+        <br>//run an if statement that prints a result to the console based on the amount variable being less than the bank_balance variable
+        <br>//display I want to buy this phone
+        <br>//or display No thanks if the if condition is not met</span>
+        <hr>
+        <h2>Loops</h2>
+        <h2>while and do while</h2>
+        <span>'While' and 'do while' loops are designed to run a set of statements in a block until the action is no longer true. This is called an interation</span>
+        <span>A 'while' loop will run until a condition is met but will not run if the condition is false to begin with. A 'do while' loop will run until the condition is met, it will run 1 iteration even if the result is false</span>
+        
+        
+         <p>
+             Var numOfCustomers = 10<br>
+             <br>while (numOfCustomers > 0) {
+        <br>console.log( "How may I help you?" );
+     <br>numOfCustomers = numOfCustomers - 1;
+        <br>}
+    
+        <br><br>
+        do {
+         <br>console.log( "How may I help you?" );   
+         <br>  numOfCustomers = numOfCustomers - 1;
+             <br>} while (numOfCustomers > 0);
+        </p>
+        <span>
+        <b>Understanding</b>
+            <br>//set the numOfCustomers variable to 10
+            <br>
+            <br>//while loop asks if the numOfCustomers variable is greater than 0
+             <br>//numberOfCustomers variable is set to -1 in the block to enable it to run the loop
+            <br>//prints to screen "How may I help you" if the numOfCustomers is greater than 1
+            <br>//numOfCustomers variable is set outside the loop so if it is less than 0 it wont run
+            <br><br>
+            //do loop prints to screen the question "How may I help you"
+            //it runs on loop and then the while statement checks if the numOfCustomers is greater than 0
+            //this will run at least once regardless of numOfCustomers
+     
+        </span>
+        <h2>for loop</h2>
+        <span>"for" loops are used to run a set number of iterations and at variable increments</span>
+        <span>The for loop has three clauses: the initialization clause (var i=0), the conditional test clause (i <= 9), and the update clause (i = i + 1). So if you're going to do counting with your loop iterations, for is a more compact and often easier form to understand and write.</span>
+               <p>
+         
+         <br>for (var i = 0; i <= 9; i = i + 1) {   
+         <br>console.log( i );
+             <br>}
+        </p>
+            <hr>
+            <h2>Functions</h2>
+        <span>A function is named section of code that can be called by name and code will be run each time</span>
+            
+            <p>
+            <br>function printAmount() {
+    <br>console.log( amount.toFixed( 2 ) );
+<br>}
+<br>
+            
+<br>var amount = 99.99;
+<br>
+<br>printAmount(); // "99.99"
+<br>
+<br>amount = amount * 2;
+<br>
+<br>printAmount(); // "199.98"
+            </p>
+            <span>
+                <b>Understanding</b>
+            <br>//create a function and name it printAmount
+<br>//function will print to screen the variable "amount" and add two decimal places to the figure
+            <br>//create the variable called "amount"
+            <br>//call the function "printAmount()", console will display 99.99
+            <br>//multiply the "amount" variable by 2 and add it to the "amount" variable
+            <br>//call the "printAmount()" function again, console will display 199.98
+            </span>
+            <h2>Using arguments in functions</h2>
+            <span>Funcions can take arguments or as know as parameters, values you pass in</span>
+            <hr>
+            <h2>Scope</h2>
+            <spna>Scope is basically a collection of variables as well as the rules for how those variables are accessed by name. Any variable within a function is unique to the function, therfore variable names can be the same if they are contained within different named functions.</span>
+            <br>
+            ############################################# end #############################################
+            <br>
+            <hr>
+            <h2>Values and types</h2>
+            <span>There are 7 types of value in JS:
+            <br>"string", "number", "boolean", "null and undefined", "object" and "symbol"</span>
+            <span>If you are unsure of a value in JS but know the variable name you can run the "typeof" operator to identify what the value of a variable may be</span>
+            <p>a = "hello world";
+            <br>typeof a;
+            <br>"string"
+            <br><br>
+            
+            
+           a = true;
+            <br>typeof a;
+            <br>"boolean"
+            <br><br>
+            </p>
+            <hr>
+            <h2>Objects</h2>
+            <span>An object holds properties and named locations that can be stored in a variable. It can be given any variable name. Object list items are seperated by a comma. To access the properties you can use dot notification by calling the variable name and the property, example obj.a</span>
+            
+                     <p>
+             Var obj = {<br>
+             <br>a: "hello world",
+     <br>b: 42,
+        <br>c: true
+            <br>};
+    <br><br>
+obj.a;    &nbsp;&nbsp;&nbsp;          //"hello world"       
+        </p>
+            
+            <span>Alternatively you can use bracket notification to select an object property. This can be useful if the objects property name is stored in another variable and you can't select it through dot notification. </span>
+            
+            <p>
+            var obj = {
+<br>a: "hello world",
+<br>b: 42
+<br>};
+<br>
+<br>var b ="a";
+<br>
+            <br>obj[b]; &nbsp;&nbsp;&nbsp;&nbsp;//"hello world"
+<br>obj["b"]; &nbsp;&nbsp;&nbsp;&nbsp;// 42
+            
+            </p>
+            
+</body>
+
+</html>
