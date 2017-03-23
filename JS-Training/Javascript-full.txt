@@ -73,7 +73,8 @@ console.log(job);  // as this variable is not defined it will come up as undefin
 job = teacher;
 isMarried = true; // you can define the variables after setting them earlier in the document
 
-console.log(name + ' is ' + age + ' and a ' + 'teacher' + ' .Is he married? ' + isMarried + '.');  // this will display the variables and strings and define them as a string (type coercion) spaces are added between the variables by adding ' content ' and + symbols next to the variables
+console.log(name + ' is ' + age + ' and a ' + 'teacher' + ' .Is he married? ' + isMarried + '.');  
+// this will display the variables and strings and define them as a string (type coercion) spaces are added between the variables by adding ' content ' and + symbols next to the variables
 
 You can change variables (variable mutation) after they've been defined by typing the variable name and adding a value. This can be displayed by running console.log
 
@@ -112,20 +113,20 @@ var ageMark = 30;
 // store 2 variables
 
 ageJohn = 3 + 5 * 4 - 6;
-// change ageJohn age variable
+// change ageJohn variable
 // the preedence of this would be 5 * 4 + 3 - 6 it will equal 18
 
 ageJohn = (3 + 5) * 4 - 6;
-// change ageJohn age variable
+// change ageJohn variable
 // the preedence of this would be 3 + 5 * 4 - 6 it will equal 26
 // this is because calculations in parenthesis have a hight preedence
 
 ageJohn++;
-// change ageJohn age variable
+// change ageJohn variable
 // this increments the age of john by one year
 
 ageMark *= 2;
-// change ageMarkJohn age variable
+// change ageMark variable
 // multiples the age of Mark by 2
 
 console.log(ageJohn);
