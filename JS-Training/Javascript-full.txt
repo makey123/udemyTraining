@@ -95,3 +95,44 @@ creating a pop up box to display a message
 
 alert (name + ' is ' + age + ' and a ' + 'teacher' + ' .Is he married? ' + isMarried + '.'); // alert is used to replace console.log
 
+#########
+Operators
+#########
+
+var thisYear = 2016;
+var birthYear = thisYear - 26;
+
+birthYear = thisYear * 2; //operator preceedence certain operators run left to right some run right to left. In this case the preedence is right to left.
+
+console.log(birthYear);
+
+
+var ageJohn = 30;
+var ageMark = 30;
+// store 2 variables
+
+ageJohn = 3 + 5 * 4 - 6;
+// change ageJohn age variable
+// the preedence of this would be 5 * 4 + 3 - 6 it will equal 18
+
+ageJohn = (3 + 5) * 4 - 6;
+// change ageJohn age variable
+// the preedence of this would be 3 + 5 * 4 - 6 it will equal 26
+// this is because calculations in parenthesis have a hight preedence
+
+ageJohn++;
+// change ageJohn age variable
+// this increments the age of john by one year
+
+ageMark *= 2;
+// change ageMarkJohn age variable
+// multiples the age of Mark by 2
+
+console.log(ageJohn);
+27
+console.log(ageMark);
+60
+
+
+
+

@@ -10,7 +10,7 @@ console.log(age);
 
 var fullAge = true;
 console.log(fullAge);
-*/
+
 
 // Lecture: variables 2
 var name = 'John';
@@ -35,7 +35,7 @@ console.log(name + ' is ' + age + ' and a ' + 'teacher' + ' .Is he married? ' + 
 
 /*var newMessage = prompt('what is your name?');
 console.log(newMessage);*/
-
+/*
 alert (name + ' is ' + age + ' and a ' + 'teacher' + ' .Is he married? ' + isMarried + '.');
 
 
@@ -45,3 +45,10 @@ var manager = 'shakespeare';
 var footManAge = 52;
 
 console.log(football + ' manager is ' + manager + ' and he is ' + footManAge);
+*/
+
+
+
+
+
+
