@@ -133,6 +133,100 @@ console.log(ageJohn);
 console.log(ageMark);
 60
 
+#######################
+if  / else statements
+#######################
+
+var name = 'john';
+var age = 52;
+var isMarried = 'no';
+
+if (isMarried === 'yes') {
+console.log(name + ' is married');
+} else {
+console.log(name + ' will hopefully marry soon');
+
+}
+
+//the text within the parenthesis is called the condition. When using a string you a running a comparrison operator
+
+var name = 'john';
+var age = 52;
+var isMarried = true;
+
+if (isMarried) {
+console.log(name + ' is married');
+} else {
+console.log(name + ' will hopefully marry soon');
+
+}
+
+//this example uses a boolean instead of a string in the program. With a boolean you dont need a comparrison operator
+
+== this does type coercison
+=== this does not 
+
+if (23 == '23'){
+console.log('hello');
+}
+// the number and the string will be read as the same, this will be defined as true, type coercion
 
 
+if (23 === '23'){
+console.log('hello');
+}
+// will not run, it will be defined as false
 
+//it is safer to use ===
+
+##################################
+Boolean logic and switch statments
+##################################
+
+var age = 16;
+
+if (age < 20 ) {
+console.log('John is a teenager');
+} else {
+console.log('John is a man')
+}
+
+# using the less operator
+
+<= less than or equal to
+< less than
+
+# using boolean logic, computer science
+
+and and or operators
+
+# AND operator
+
+AND(&&) true if ALL are true
+
+                    Var A
+            AND     TRUE    FALSE
+Var B       TRUE    TRUE    FALSE
+            FALSE   FALSE   FALSE
+            
+// This statement runs a comparisson between variables to determine if they are true or false. There is only one true outcome in this example that is that if variable A and B are true.
+
+
+# OR operator
+
+OR(||) true if one is true
+
+                    Var A
+            AND     TRUE    FALSE
+Var B       TRUE    TRUE    TRUE
+            FALSE   TRUE    FALSE
+            
+// This statment runs a comparison between variables and displays a result if one of the variables meets the condition. Therefore if variable B is false yet variable A is true the answer still remains true.
+            
+
+# NOT operator
+            
+# NOT(!) inverst true/false value   
+
+// This switches the logic round so if Var A is true it becomes false
+            
