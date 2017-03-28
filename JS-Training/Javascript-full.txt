@@ -230,4 +230,83 @@ Var B       TRUE    TRUE    TRUE
 # NOT(!) inverst true/false value   
 
 // This switches the logic round so if Var A is true it becomes false
+
+
+// therefore the following statements, based on the age variable of 16 calculate as follows
+
+age >= 30;  // false
+age < 30;  //true
+!(age < 30);  //false
+
+age >= 20 && age < 30  //false
+age  >= 20 || age < 30;  //true
+
+
+# using the && statement
+
+var age = 32;
+if (age > 20 && age < 30){
+    console.log("John is a young man");
+}else if (age > 31 && age < 60){
+    console.log("john is and adult under 60");
+}
+else {
+    console.log("John is over 30");
+}
+
+
+// in the example above the && statement is used, the answer will be true on both counts based on the age variable of 32
+
+# using the switch statement
+
+
+var job ='teacher';
+
+job = prompt("what does John do?");
+
+switch (job) {
+    case 'teacher':
+        console.log('John teaches kids.');
+        break;
+    case 'driver':
+        console.log('John drives a cab.');
+        break;
+    case 'policeman':
+        console.log('John is a policeman.');
+        break;
+    default:
+        console.log('John does something else.');
+}
+
+// the above is another way of writing the if/else statement.
+// a variable of teacher is set then a pop up box is generated to ask a question.
+//when the answer is submitted  if one of the following cases match then the corresponding result is displayed. Or the default result is displayed.
+
+###########
+challenge 1
+###########
+
+
+var nameOne = "Jack";
+var nameTwo = "Simon";
+var nameThree = "Sue";
+var heightOne = 120;
+var heightTwo = 120;
+var heightThree = 120;
+var jackHeight = heightOne * 5;
+var simonHeight = heightTwo * 5;
+var sueHeight = heightThree * 5;
+
+if (sueHeight > simonHeight && jackHeight) {
+    console.log(nameThree + " is the winnner, the height is " + sueHeight + "cms");
+}else if (jackHeight > sueHeight && simonHeight){
+    console.log(nameOne + " is the winnner, the height is " + jackHeight + "cms");
+}else if (simonHeight > sueHeight && jackHeight){
+     console.log(nameTwo + " is the winnner, the height is " + simonHeight + "cms");
+}else
+    console.log("All heights are the same");
+
+// take one individual and times their height by 5, then compare it against two others and show the winning result to the console 
+
+
             
