@@ -138,7 +138,7 @@ run> clone https://github.com/LearnWebCode/welcome-to-git.git
 configuring a github account
 
 1. Setup an account, create a repository in github, give it a name
-2. download the folder by cloning it and store it in a folder called remote  by running> git clone https://github.com/makey123/andyTest.git remote -v
+2. download the folder by cloning it and store it in a folder called remote  by running> git clone https://github.com/makey123/andyTest.git remote -v //you can create any filename after the clone, in this case called remote
 2. cd to the remote file in your working directory you want to push to github
 3. run> git remote -v
 # this will display the server location where it believes you want to push to e,g
