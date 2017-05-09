@@ -25,7 +25,7 @@ john.unshift('Mr ');
 // pop removes the last element from an array
 john.pop();
 
-// shift removes the forst element from an array
+// shift removes the first element from an array
 john.shift();
 
 console.log(john);
@@ -33,7 +33,7 @@ console.log(john);
 // indexOf displays the position of the element
 var john.indexOf('Smith');
 
-// Use an if statement to determine if an item is in an array. By default if an items is not in an array it will display as -1 or as a position number. As this is equal to -1 the message will be condole logged.
+// Use an if statement to determine if an item is in an array. By default if an items is not in an array it will display as -1 or as a position number. As this is equal to -1 the message will be console logged.
 if(john.indexOf('teacher') === -1) {
  console.log('John is not a teacher.');   
 }

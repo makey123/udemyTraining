@@ -466,3 +466,188 @@ if(john.indexOf('teacher') === -1) {
 }
 
 
+############################
+## objects and properties ##
+############################
+
+
+//Use objects to group together different variables in no particular order
+
+var john = {
+    name: 'John',
+    lastName: 'Smith',
+    yearOfBirth: 1990,
+    job: 'teacher',
+    isMarried: false
+};
+
+console.log(john);
+
+//Retrieving object properties 
+
+//1: Using dot notation
+console.log(john.lastName);
+
+//2: using [] brackets
+console.log(john['lastName']);
+
+
+//Storing an object property in a variable
+var xyz = 'job';
+console.log(john[xyz]);
+
+
+//Mutating an object property
+
+//1: Using dot notation
+john.lastName = 'Miller';
+
+//2: using [] brackets
+john['job'] = 'programmer';
+
+console.log(john);
+
+
+//Creating an object and adding properties
+
+var jane = new Object(); // create a variable
+
+// add properties to the object
+jane.name = 'Jane';
+jane.lastName = 'Smith';
+jane.job = 'accountant';
+jane['yearOfBirth'] = 1969;
+jane['isMarried'] = true;
+
+console.log(jane);
+console.log(jane.name);
+console.log(jane['lastName']);
+
+
+
+
+
+
+#########################
+## objects and methods ##
+#########################
+
+// an object
+var mary = {
+    name: 'Mary',
+    shoeSize: 12,
+    yearOfBirth: 1983,
+    isMarried: true,
+    family: ['mark', 'bob', 'simon'], // array
+
+    // the following is a function inside an object, it is called a method - this example calculates the age of Mary. 
+    calculateAge: function (myAge) {
+        return 2016 - myAge;
+    },
+
+    //the following is also a method inside an object but instead of having to provide a value outside the object to work it relies on the values already listed inside the object. the 'this' value refers to the object name 'mary' 
+    calculateAgeAgain: function () {
+        return 2016 - this.yearOfBirth;
+    }
+
+}
+
+console.log(mary); //display object array
+console.log(mary.family[2]); //retrieve simon from the family array
+console.log(mary.calculateAge(1923)); //apply a value to the calculateAge function to display a result
+console.log(mary.calculateAgeAgain()); //value already applied within the function
+
+
+//taking the method result and adding it to a variable
+var age = mary.calculateAgeAgain();
+
+//creating an item in the object called age and adding the age variable to it
+mary.age = age;
+
+
+
+
+
+// this is a variable function outside an object
+var calculateAge = function (yearOfBirth) {
+
+}
+
+
+
+
+###########
+## loops ##
+###########
+
+
+// ###### for loops #######
+
+for (var i = 0; i < 10; i++) {
+    console.log(i);
+}
+
+// i is the counter variable
+// i to reach no further than 10
+// i++ run again until the 9 value is reached, as soon as the condition is false and the loop ends
+
+// create a variable to store an array
+var names = ['john', 'jane', 'mary', 'mark'];
+
+// run a for loop to list the names
+for (var i = 0; i < 5; i++) {
+    console.log(names[i]);
+}
+
+// run a for loop to list the names, if you don't know the numbers of elements in the array. this can be done by using the length property 
+for (var i = 0; i < names.length; i++) {
+    console.log(names[i]);
+}
+
+// this loop calculates the length of the array, subtracts 1 and stores it in the variable i. It decrements backwards until the value of 0 is reached. 
+for (var i = names.length - 1; i >= 0; i--) {
+    console.log(names[i]);
+}
+
+
+// ###### while loops #######
+
+//first, define a counter
+var i = 0;
+
+//The while loop works the same as a for loop but with the counter defined outside the loop and the increment/decrement contained within the curly brackets
+while (i < names.length) {
+    console.log(names[i]);
+    i++;
+}
+
+
+// ##### using break statments to stop a loop ####
+
+// this can be done with an if statement 
+
+for (i = 0; i <= 5; i++){
+console.log(i);
+    
+    if (i === 3) {
+     break;   
+    }
+    
+}
+
+
+// ##### using continue statments in a loop ####
+
+// the if continue statement is run first. When the if statment is met, in this example the number 3 will be skipped and the loop will continue.
+
+
+for (i = 0; i <= 5; i++){    
+    if (i === 3) {
+     continue;   
+    }
+    
+     console.log(i);
+
+}
+
+
